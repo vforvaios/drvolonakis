@@ -45,7 +45,7 @@ export default function MobileMenu() {
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
         aria-haspopup="dialog"
-        className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E5ECE9] text-[#172D3D] transition hover:bg-[#EAF4F1] md:hidden"
+        className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E5ECE9] text-foreground transition hover:bg-[#EAF4F1] md:hidden"
       >
         <svg
           viewBox="0 0 24 24"
@@ -74,14 +74,14 @@ export default function MobileMenu() {
         }`}
       >
         {/* Menu header */}
-        <div className="flex h-20 shrink-0 items-center justify-between border-b border-[#E8EEEC] bg-white px-6">
+        <div className="flex h-20 shrink-0 items-center justify-between border-b border-border bg-white px-6">
           <Link
             href="/"
             onClick={closeMenu}
             tabIndex={isOpen ? 0 : -1}
             className="flex flex-col"
           >
-            <span className="text-xl font-semibold tracking-tight text-[#172D3D]">
+            <span className="text-xl font-semibold tracking-tight text-foreground">
               Δρ. Βολωνάκης
             </span>
             <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-[#6F858B]">
@@ -95,7 +95,7 @@ export default function MobileMenu() {
             onClick={closeMenu}
             aria-label="Κλείσιμο μενού"
             tabIndex={isOpen ? 0 : -1}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E5ECE9] text-[#172D3D] transition hover:bg-[#EAF4F1]"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E5ECE9] text-foreground transition hover:bg-[#EAF4F1]"
           >
             <svg
               viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function MobileMenu() {
 
         {/* Navigation */}
         <nav className="flex min-h-0 flex-1 flex-col justify-center overflow-y-auto bg-white px-8 py-8">
-          <span className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-[#218C83]">
+          <span className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             Μενού
           </span>
 
@@ -127,10 +127,10 @@ export default function MobileMenu() {
                 href={item.href}
                 onClick={closeMenu}
                 tabIndex={isOpen ? 0 : -1}
-                className="group flex items-center justify-between border-b border-[#E8EEEC] py-6 text-2xl font-medium tracking-tight text-[#172D3D] transition-colors hover:text-[#218C83]"
+                className="group flex items-center justify-between border-b border-border py-6 text-2xl font-medium tracking-tight text-foreground transition-colors hover:text-accent"
               >
                 <span>{item.label}</span>
-                <span className="text-lg text-[#9AAEAA] transition-transform group-hover:translate-x-2">
+                <span className="text-lg text-subtle transition-transform group-hover:translate-x-2">
                   →
                 </span>
               </Link>
@@ -146,7 +146,7 @@ export default function MobileMenu() {
               href="/contact"
               onClick={closeMenu}
               tabIndex={isOpen ? 0 : -1}
-              className="flex w-full items-center justify-center rounded-full bg-[#1D7772] px-6 py-5 text-base font-semibold text-white transition hover:bg-[#155F5B]"
+              className="flex w-full items-center justify-center rounded-full bg-primary px-6 py-5 text-base font-semibold text-white transition hover:bg-primary-hover"
             >
               Κλείστε Ραντεβού
               <span className="ml-3">→</span>
@@ -155,8 +155,8 @@ export default function MobileMenu() {
         </nav>
 
         {/* Footer */}
-        <div className="shrink-0 border-t border-[#E8EEEC] bg-white px-8 py-6">
-          <span className="text-xs text-[#9AAEAA]">©2026 Δρ. Βολωνάκης</span>
+        <div className="shrink-0 border-t border-border bg-white px-8 py-6">
+          <span className="text-xs text-subtle">©2026 Δρ. Βολωνάκης</span>
         </div>
       </div>
     </>

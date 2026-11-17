@@ -27,9 +27,9 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FAFBFA] text-[#172D3D]">
+    <main className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-[#E8EEEC] bg-[#FAFBFA]/95 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
           <Link href="/" className="flex flex-col">
             <span className="text-xl font-semibold tracking-tight">
@@ -42,16 +42,16 @@ export default function Home() {
 
           {/* Desktop navigation */}
           <nav className="hidden items-center gap-9 text-sm font-medium text-[#52666D] md:flex">
-            <Link href="/" className="transition hover:text-[#218C83]">
+            <Link href="/" className="transition hover:text-accent">
               Αρχική
             </Link>
-            <Link href="/services" className="transition hover:text-[#218C83]">
+            <Link href="/services" className="transition hover:text-accent">
               Παθήσεις
             </Link>
-            <Link href="/biography" className="transition hover:text-[#218C83]">
+            <Link href="/biography" className="transition hover:text-accent">
               Βιογραφικό
             </Link>
-            <Link href="/contact" className="transition hover:text-[#218C83]">
+            <Link href="/contact" className="transition hover:text-accent">
               Επικοινωνία
             </Link>
           </nav>
@@ -59,7 +59,7 @@ export default function Home() {
           {/* Desktop CTA */}
           <Link
             href="/contact"
-            className="hidden rounded-full bg-[#1D7772] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#155F5B] md:inline-flex"
+            className="hidden rounded-full bg-primary px-5 py-3 text-sm font-medium text-white transition hover:bg-primary-hover md:inline-flex"
           >
             Κλείστε Ραντεβού
           </Link>
@@ -76,18 +76,18 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 lg:py-36">
           <div>
             <div className="mb-8 flex items-center gap-3">
-              <span className="h-px w-10 bg-[#218C83]" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#218C83]">
+              <span className="h-px w-10 bg-accent" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                 Ορθοπεδική Φροντίδα
               </span>
             </div>
 
             <h1 className="max-w-3xl text-5xl leading-[1.13] font-semibold tracking-tight md:text-6xl lg:text-7xl">
               Η κίνηση είναι
-              <span className="block text-[#218C83]">ζωή.</span>
+              <span className="block text-accent">ζωή.</span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-[#65777C]">
+            <p className="mt-8 max-w-xl text-lg leading-8 text-muted">
               Σύγχρονη ορθοπεδική προσέγγιση με επίκεντρο τον άνθρωπο.
               Ενημερωθείτε για τις παθήσεις, τις διαθέσιμες θεραπείες και τις
               δυνατότητες αποκατάστασης.
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href="/services"
-                className="rounded-full bg-[#1D7772] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#155F5B]"
+                className="rounded-full bg-primary px-7 py-4 text-sm font-semibold text-white transition hover:bg-primary-hover"
               >
                 Ανακαλύψτε τις παθήσεις
                 <span className="ml-3">→</span>
@@ -104,7 +104,7 @@ export default function Home() {
 
               <Link
                 href="/biography"
-                className="px-5 py-4 text-sm font-semibold text-[#314B57] transition hover:text-[#218C83]"
+                className="px-5 py-4 text-sm font-semibold text-[#314B57] transition hover:text-accent"
               >
                 Γνωρίστε τον γιατρό
               </Link>
@@ -113,11 +113,11 @@ export default function Home() {
 
           {/* Abstract visual */}
           <div className="relative hidden min-h-[420px] items-center justify-center lg:flex">
-            <div className="absolute h-[360px] w-[360px] rounded-full border border-[#D6E8E3]" />
-            <div className="absolute h-[290px] w-[290px] rounded-full border border-[#D6E8E3]" />
+            <div className="absolute h-[360px] w-[360px] rounded-full border border-subtle-2" />
+            <div className="absolute h-[290px] w-[290px] rounded-full border border-subtle-2" />
             <div className="absolute h-[220px] w-[220px] rounded-full bg-[#EAF4F1]" />
 
-            <div className="relative flex h-44 w-44 items-center justify-center rounded-full bg-[#1D7772] text-white shadow-2xl shadow-[#1D7772]/20">
+            <div className="relative flex h-44 w-44 items-center justify-center rounded-full bg-primary text-white shadow-2xl shadow-primary/20">
               <svg
                 viewBox="0 0 100 100"
                 fill="none"
@@ -139,14 +139,14 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="absolute right-0 top-16 rounded-2xl border border-[#E7EFEC] bg-white px-5 py-4 shadow-lg shadow-[#172D3D]/5">
+            <div className="absolute right-0 top-16 rounded-2xl border border-[#E7EFEC] bg-white px-5 py-4 shadow-lg shadow-foreground/5">
               <span className="block text-sm font-semibold">
                 Εξατομικευμένη
               </span>
               <span className="text-sm text-[#71858A]">ιατρική προσέγγιση</span>
             </div>
 
-            <div className="absolute bottom-12 left-0 rounded-2xl border border-[#E7EFEC] bg-white px-5 py-4 shadow-lg shadow-[#172D3D]/5">
+            <div className="absolute bottom-12 left-0 rounded-2xl border border-[#E7EFEC] bg-white px-5 py-4 shadow-lg shadow-foreground/5">
               <span className="block text-sm font-semibold">
                 Σύγχρονη γνώση
               </span>
@@ -159,10 +159,10 @@ export default function Home() {
       </section>
 
       {/* Introduction */}
-      <section className="border-y border-[#E8EEEC] bg-white">
+      <section className="border-y border-border bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-20 lg:grid-cols-2 lg:px-10 lg:py-24">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#218C83]">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Καλώς ήρθατε
             </span>
             <h2 className="mt-5 max-w-lg text-3xl leading-tight font-semibold tracking-tight md:text-4xl">
@@ -171,7 +171,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <p className="text-base leading-8 text-[#65777C]">
+            <p className="text-base leading-8 text-muted">
               Κάθε ασθενής είναι διαφορετικός. Στόχος είναι η σωστή διάγνωση, η
               πλήρης ενημέρωση και η επιλογή της κατάλληλης θεραπευτικής
               προσέγγισης, με βάση τις ανάγκες και την καθημερινότητα κάθε
@@ -179,7 +179,7 @@ export default function Home() {
             </p>
             <Link
               href="/biography"
-              className="mt-6 w-fit text-sm font-semibold text-[#1D7772] hover:underline"
+              className="mt-6 w-fit text-sm font-semibold text-primary hover:underline"
             >
               Περισσότερα για τον γιατρό →
             </Link>
@@ -191,7 +191,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#218C83]">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Ιατρικές Υπηρεσίες
             </span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-4xl">
@@ -201,7 +201,7 @@ export default function Home() {
 
           <Link
             href="/services"
-            className="text-sm font-semibold text-[#1D7772] hover:underline"
+            className="text-sm font-semibold text-primary hover:underline"
           >
             Όλες οι παθήσεις →
           </Link>
@@ -212,9 +212,9 @@ export default function Home() {
             <Link
               key={service.number}
               href={service.href}
-              className="group rounded-2xl border border-[#E5ECE9] bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-[#B7D8D0] hover:shadow-xl hover:shadow-[#172D3D]/5"
+              className="group rounded-2xl border border-[#E5ECE9] bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-[#B7D8D0] hover:shadow-xl hover:shadow-foreground/5"
             >
-              <span className="text-sm font-semibold text-[#218C83]">
+              <span className="text-sm font-semibold text-accent">
                 {service.number}
               </span>
 
@@ -226,7 +226,7 @@ export default function Home() {
                 {service.description}
               </p>
 
-              <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#1D7772] transition group-hover:gap-4">
+              <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-4">
                 Μάθετε περισσότερα <span>→</span>
               </span>
             </Link>
@@ -259,10 +259,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#FAFBFA]">
+      <footer className="bg-background">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-10 text-sm text-[#718187] md:flex-row md:items-center md:justify-between lg:px-10">
           <div>
-            <span className="font-semibold text-[#172D3D]">Δρ. Βολωνάκης</span>
+            <span className="font-semibold text-foreground">Δρ. Βολωνάκης</span>
             <span className="ml-2">Ορθοπεδικός Χειρουργός</span>
           </div>
           <span>©2026 Όλα τα δικαιώματα διατηρούνται.</span>
