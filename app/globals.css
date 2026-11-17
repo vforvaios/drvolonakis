@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafbfa;
+  --foreground: #172d3d;
+
+  --primary: #1d7772;
+  --primary-hover: #155f5b;
+
+  --muted: #65777c;
+  --border: #e8eeec;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-noto-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
