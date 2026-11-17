@@ -1,6 +1,5 @@
-"use client";
-
 import Link from "next/link";
+import MobileMenu from "./components/MobileMenu";
 
 const services = [
   {
@@ -34,13 +33,14 @@ export default function Home() {
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
           <Link href="/" className="flex flex-col">
             <span className="text-xl font-semibold tracking-tight">
-              Δρ. Βολονάκης
+              Δρ. Βολωνάκης
             </span>
             <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-[#6F858B]">
               Ορθοπεδικός Χειρουργός
             </span>
           </Link>
 
+          {/* Desktop navigation */}
           <nav className="hidden items-center gap-9 text-sm font-medium text-[#52666D] md:flex">
             <Link href="/" className="transition hover:text-[#218C83]">
               Αρχική
@@ -56,12 +56,16 @@ export default function Home() {
             </Link>
           </nav>
 
+          {/* Desktop CTA */}
           <Link
             href="/contact"
-            className="rounded-full bg-[#1D7772] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#155F5B]"
+            className="hidden rounded-full bg-[#1D7772] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#155F5B] md:inline-flex"
           >
             Κλείστε Ραντεβού
           </Link>
+
+          {/* Mobile menu */}
+          <MobileMenu />
         </div>
       </header>
 
@@ -107,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Abstract visual instead of stock photography */}
+          {/* Abstract visual */}
           <div className="relative hidden min-h-[420px] items-center justify-center lg:flex">
             <div className="absolute h-[360px] w-[360px] rounded-full border border-[#D6E8E3]" />
             <div className="absolute h-[290px] w-[290px] rounded-full border border-[#D6E8E3]" />
@@ -258,12 +262,10 @@ export default function Home() {
       <footer className="bg-[#FAFBFA]">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-10 text-sm text-[#718187] md:flex-row md:items-center md:justify-between lg:px-10">
           <div>
-            <span className="font-semibold text-[#172D3D]">Δρ. Βολονάκης</span>
+            <span className="font-semibold text-[#172D3D]">Δρ. Βολωνάκης</span>
             <span className="ml-2">Ορθοπεδικός Χειρουργός</span>
           </div>
-          <span>
-            © {new Date().getFullYear()} Όλα τα δικαιώματα διατηρούνται.
-          </span>
+          <span>©2026 Όλα τα δικαιώματα διατηρούνται.</span>
         </div>
       </footer>
     </main>

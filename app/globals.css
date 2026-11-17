@@ -14,7 +14,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
   --font-sans: var(--font-noto-sans);
 }
 
@@ -24,9 +23,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
+  position: relative;
+  min-height: 100%;
+  overflow-x: clip;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-noto-sans), sans-serif;
@@ -34,4 +37,21 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* Mobile navigation */
+.mobile-menu {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu {
+    transition-duration: 0.01ms;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
