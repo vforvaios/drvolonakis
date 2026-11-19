@@ -1,0 +1,44 @@
+import { HelmetProvider } from "react-helmet-async";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/pages/Home";
+import { SnackbarProvider } from "notistack";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AppLayout from "./layouts/AppLayout";
+import ProtectedRoute from "./routes/ProtectedRoute";
+import AdminLayout from "./layouts/AdminLayout";
+import ScrollToTop from "./components/utils/ScrollToTop";
+import AdminHome from "./components/AdminHome";
+import Login from "./components/Login";
+import Register from "./components/Register";
+
+const App = () => {
+  const queryClient = new QueryClient();
+
+  return (
+    <HelmetProvider>
+      <SnackbarProvider />
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          {/* <Header /> */}
+          <ScrollToTop />
+          <Routes>
+            <Route element={<AppLayout />}>
+              <Route index element={<Home />} />
+
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Route>
+
+            <Route element={<ProtectedRoute />}>
+              <Route path="admin" element={<AdminLayout />}>
+                <Route index element={<AdminHome />} />
+              </Route>
+            </Route>
+          </Routes>
+        </Router>
+      </QueryClientProvider>
+    </HelmetProvider>
+  );
+};
+
+export default App;
