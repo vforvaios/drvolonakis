@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const navigation = [
     { label: "Αρχική", href: "/" },
-    { label: "Παθήσεις", href: "/services" },
+    { label: "Υπηρεσίες", href: "/services" },
     { label: "Βιογραφικό", href: "/biography" },
     { label: "Επικοινωνία", href: "/contact" },
   ];

@@ -1,33 +1,9 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss";
-import Header from "../../common/Header";
+import { services } from "@/constants";
 
 export default function Home() {
-  const services = [
-    {
-      number: "01",
-      title: "Παθήσεις Σπονδυλικής Στήλης",
-      description:
-        "Διάγνωση και αντιμετώπιση παθήσεων που επηρεάζουν τη σπονδυλική στήλη.",
-      href: "/services/spine",
-    },
-    {
-      number: "02",
-      title: "Παθήσεις Άνω Άκρων",
-      description:
-        "Εξειδικευμένη προσέγγιση σε προβλήματα ώμου, αγκώνα, καρπού και χεριού.",
-      href: "/services/upper-limbs",
-    },
-    {
-      number: "03",
-      title: "Παθήσεις Κάτω Άκρων",
-      description:
-        "Αξιολόγηση και θεραπεία παθήσεων ισχίου, γόνατος, ποδοκνημικής και άκρου ποδός.",
-      href: "/services/lower-limbs",
-    },
-  ];
-
   return (
     <>
       <Helmet>
@@ -161,24 +137,28 @@ export default function Home() {
             </div>
 
             <div className="services__grid">
-              {services.map((service) => (
-                <Link
-                  key={service.number}
-                  to={service.href}
-                  className="service-card"
-                >
-                  <span className="service-card__number">{service.number}</span>
+              {services
+                .filter((service) => Number(service.number) < 4)
+                .map((service) => (
+                  <Link
+                    key={service.number}
+                    to={service.href}
+                    className="service-card"
+                  >
+                    <span className="service-card__number">
+                      {service.number}
+                    </span>
 
-                  <h3>{service.title}</h3>
+                    <h3>{service.title}</h3>
 
-                  <p>{service.description}</p>
+                    <p>{service.description}</p>
 
-                  <span className="service-card__link">
-                    Μάθετε περισσότερα
-                    <span aria-hidden="true">→</span>
-                  </span>
-                </Link>
-              ))}
+                    <span className="service-card__link">
+                      Μάθετε περισσότερα
+                      <span aria-hidden="true">→</span>
+                    </span>
+                  </Link>
+                ))}
             </div>
           </div>
         </section>
