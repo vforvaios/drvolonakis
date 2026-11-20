@@ -1,0 +1,203 @@
+.biography {
+  padding-top: 100px;
+
+  .container {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+  }
+
+  &__hero {
+    padding: 50px 0 110px;
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+
+    &::before {
+      content: "";
+      width: 26px;
+      height: 1px;
+      background: var(--color-primary);
+    }
+  }
+
+  h1 {
+    margin: 35px 0 18px;
+    font-size: clamp(3rem, 7vw, 5.8rem);
+    font-weight: 400;
+    letter-spacing: -0.065em;
+    line-height: 1.08;
+
+    span {
+      display: block;
+      color: var(--color-primary);
+    }
+  }
+
+  &__specialty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 1.05rem;
+
+    span {
+      position: relative;
+
+      &::before {
+        content: "/";
+        margin-right: 24px;
+        color: var(--color-subtle);
+      }
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    margin: 65px 0 40px;
+    background: var(--color-border);
+  }
+
+  &__education {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px;
+    max-width: 850px;
+  }
+
+  &__education-item {
+    display: flex;
+    gap: 20px;
+
+    h2 {
+      margin: 0 0 8px;
+      color: var(--color-foreground);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: 0.92rem;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__index {
+    padding-top: 2px;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  &__philosophy {
+    padding: 85px 0 95px;
+    background: var(--color-surface-secondary);
+  }
+
+  &__quote {
+    position: relative;
+    max-width: 920px;
+    margin: 45px auto 0;
+    padding-left: 40px;
+    border-left: 2px solid var(--color-primary);
+  }
+
+  &__quote-mark {
+    display: block;
+    height: 65px;
+    color: var(--color-primary);
+    font-family: Georgia, serif;
+    font-size: 6rem;
+    line-height: 1;
+    opacity: 0.45;
+  }
+
+  blockquote {
+    margin: 0;
+    color: var(--color-foreground);
+    font-size: clamp(1.25rem, 2.4vw, 1.85rem);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.75;
+  }
+
+  &__closing {
+    margin: 45px 0 0 42px;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 768px) {
+  .biography {
+    padding-top: 55px;
+
+    &__hero {
+      padding: 35px 0 75px;
+    }
+
+    h1 {
+      margin-top: 28px;
+    }
+
+    &__divider {
+      margin: 45px 0 30px;
+    }
+
+    &__education {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &__philosophy {
+      padding: 65px 0 70px;
+    }
+
+    &__quote {
+      margin-top: 30px;
+      padding-left: 22px;
+    }
+
+    &__quote-mark {
+      height: 50px;
+      font-size: 4.5rem;
+    }
+
+    &__closing {
+      margin-left: 24px;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .biography__hero,
+  .biography__philosophy {
+    animation: biography-enter 0.7s ease both;
+  }
+
+  @keyframes biography-enter {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

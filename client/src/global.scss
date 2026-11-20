@@ -24,6 +24,7 @@
 
 * {
   box-sizing: border-box;
+  line-height: 1.8;
 }
 
 html {
@@ -45,4 +46,17 @@ a {
 
 button {
   font: inherit;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+  color: var(--color-foreground);
 }
