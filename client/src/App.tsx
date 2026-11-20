@@ -12,6 +12,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Contact from "./components/pages/contact/Contact";
 import Biography from "./components/pages/biography/Biography";
+import Services from "./components/pages/services/Services";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => {
               <Route index element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/biography" element={<Biography />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
 
               <Route path="/login" element={<Login />} />

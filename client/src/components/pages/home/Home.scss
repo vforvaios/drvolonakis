@@ -316,7 +316,7 @@
     grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
     gap: 4rem;
-    padding-block: 7rem;
+    padding-block: 6rem;
   }
 
   &__content {
@@ -546,7 +546,7 @@
   display: flex;
   min-height: 20rem;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border: 1px solid var(--color-border);
   border-radius: 1.25rem;
   background: var(--color-surface);
@@ -565,12 +565,12 @@
 
   &__number {
     color: var(--color-accent);
-    font-size: 0.875rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
   h3 {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: -0.025em;
@@ -593,6 +593,7 @@
     font-size: 0.875rem;
     font-weight: 700;
     transition: gap 0.25s ease;
+    text-decoration: none;
   }
 
   &:hover &__link {
