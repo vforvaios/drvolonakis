@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss";
-import Header from "../common/Header";
+import Header from "../../common/Header";
 
 export default function Home() {
   const services = [
@@ -48,7 +48,6 @@ export default function Home() {
       </Helmet>
 
       <main className="home">
-        <Header />
         {/* Hero */}
         <section className="hero">
           <div className="hero__decoration" />

@@ -3,23 +3,23 @@
 @use "../src/styles/login.scss" as *;
 
 :root {
-  --color-background: #fafbfa;
+  --color-background: #f8fafc;
   --color-surface: #ffffff;
-  --color-surface-secondary: #f2f6f4;
+  --color-surface-secondary: #eef4fa;
 
-  --color-foreground: #172d3d;
-  --color-muted: #65777c;
-  --color-subtle: #9aaeaa;
-  --color-subtle-2: #d6e8e3;
+  --color-foreground: #172b45;
+  --color-muted: #64758b;
+  --color-subtle: #94a9bf;
+  --color-subtle-2: #d5e3f1;
 
-  --color-primary: #1d7772;
-  --color-primary-hover: #155f5b;
-  --color-accent: #218c83;
+  --color-primary: #2866a6;
+  --color-primary-hover: #1e5289;
+  --color-accent: #3988c9;
 
-  --color-border: #e8eeec;
-  --color-dark-section: #173d46;
+  --color-border: #e3eaf2;
+  --color-dark-section: #142f4d;
 
-  --shadow-card: 0 12px 40px rgba(23, 45, 61, 0.06);
+  --shadow-card: 0 12px 40px rgba(23, 43, 69, 0.07);
 }
 
 * {
