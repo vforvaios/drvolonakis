@@ -1,5 +1,5 @@
 .biography {
-  padding-top: 100px;
+  padding-block: 4rem;
 
   .container {
     margin: 0 auto;
@@ -16,7 +16,7 @@
     color: var(--color-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.2em;
 
     &::before {
       content: "";
@@ -28,8 +28,8 @@
 
   h1 {
     margin: 35px 0 18px;
-    font-size: clamp(3rem, 7vw, 5.8rem);
-    font-weight: 400;
+    font-size: clamp(2rem, 7vw, 5rem);
+    font-weight: 700;
     letter-spacing: -0.065em;
     line-height: 1.08;
 
