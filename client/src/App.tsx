@@ -13,6 +13,7 @@ import Register from "./components/Register";
 import Contact from "./components/pages/contact/Contact";
 import Biography from "./components/pages/biography/Biography";
 import Services from "./components/pages/services/Services";
+import NotFound from "./components/pages/not-found/NotFound";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => {
 
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
 
             <Route element={<ProtectedRoute />}>
