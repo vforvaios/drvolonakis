@@ -6,104 +6,104 @@ const services = [
     title: "Επαναστατική Αρθροπλαστική Ισχίου & Γόνατος",
     description:
       "Χειρουργική αντιμετώπιση προχωρημένης οστεοαρθρίτιδας με βάση την εμπειρία περισσότερων από 2500 επεμβάσεων και τη χρήση τεχνικών ελάχιστης επεμβατικότητας (MIS / Fast-Track).",
-    href: "/services/spine",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "2",
     title: "Χειρουργική Άκρου Ποδός",
     description:
       "Σύγxρονη χειρουργική αντιμετώπιση Βλαισού Μεγάλου Δακτύλου (Hallux Valgus)",
-    href: "/services/upper-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "3",
     title: "Συντηρητική Αντιμετώπιση Οστεοαρθρίτιδας",
     description: "Ενδαρθρικές Θεραπείες & Ιξωδοαναπλήρωση (Υαλουρονικό Οξύ)",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "4",
     title: "Εγχύσεις Υαλουρονικού Οξέος (Viscosupplementation)",
     description:
       "Ενδαρθρική έγχυση υψηλής καθαρότητας και κατάλληλου μοριακού βάρους υαλουρονικού οξέος. Λειτουργεί ως βιολογικό «λιπαντικό» μέσα στην αρθρωση.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "5",
     title: "Αντιμετώπιση Οσφυαλγίας & Παθήσεων Σπονδυλικής Στήλης",
     description:
       "Η προσέγγιση της οσφυαλγίας και της ισχιαλγίας εστιάζει στην ακριβή διάγνωση και την εφαρμογή στοχευμένων, ελάχιστα επεμβατικών πράξεων στο ιατρείο.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "6",
     title: "Παρασπονδυλικές Εγχύσεις (Facet Joints)",
     description:
       "Στοχευμένη έγχυση για την αντιμετώπιση του πόνου που προέρχεται από την αρθρίτιδα των μικρών αρθρώσεων της σπονδυλικής στήλης",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "7",
     title: "Ιερονωτιαίες / Επισκληρίδιες Εγχύσεις (Caudal Epidural)",
     description:
       "Εφαρμογή σε περιπτώσεις έντονης ισχιαλγίας, στενώσεως ή δισκοπάθειας, με στόχο τη μείωση της φλεγμονής γύρω από τις νευρικές ρίζες.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "8",
     title: "Παθήσεις Ώμου ,Αγκωνα, Ακρου Ποδος, και τενοντων",
     description:
       "Αντιμετώπιση τενοντιτίδων, συνδρόμων πρόσκρουσης Ωμου και χρόνιων μικροτραυματισμών της άρθρωσης του ώμου.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "9",
     title: "Υπακρωμιακές Εγχύσεις",
     description:
       "Στοχευμένη έγχυση στον υπακρωμιακό χώρο για την άμεση υποχώρηση της φλεγμονής και την αποκατάσταση της κίνησης του Ώμου.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "10",
     title: "Εγχυσεις τενοντων",
     description:
       "Για την αντιμετωπιση επιμονων περιπτωσεων φλεγμονων περιξ των αρθρωσεων",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "11",
     title: "Βιολογικές Θεραπείες (PRP – Πεπτίδια κολλαγόνου",
     description:
       "Η χρήση αυτόλογων παραγόντων (PRP) εφαρμόζεται στο ιατρείο αυστηρά κατόπιν επιλογής και μόνο σε συγκεκριμένες, τεκμηριωμένες ενδείξεις",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "12",
     title: "Κλινική Διαχείριση Οστεοπόρωσης",
     description:
       "Πρόληψη, έλεγχος και μακροχρόνια θεραπευτική στρατηγική για την αποφυγή καταγμάτων και τη διατήρηση της οστικής υγείας.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "13",
     title: "Αξιολόγηση Καταγματικού Κινδύνου",
     description:
       "Ανάλυση της μέτρησης οστικής πυκνότητας (DEXA – frax score) σε συνδυασμό με το ιστορικό και ειδικούς βιοχημικούς δείκτες.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "14",
     title: "Εξατομικευμένη Θεραπεία",
     description:
       "Επιλογή του κατάλληλου θεραπευτικού σχήματος με βάση το προφίλ του ασθενούς για τη θωράκιση του σκελετού.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
   {
     number: "15",
     title: "Εξειδικευμενο Παιδορθοπεδικό Ιατρείο",
     description:
       "Έγκαιρη διάγνωση, παρακολούθηση και αντιμετώπιση παθήσεων του μυοσκελετικού συστήματος από τη βρεφική έως την εφηβική ηλικία.",
-    href: "/services/lower-limbs",
+    href: "/services/large-joint-surgery",
   },
 ];
 
